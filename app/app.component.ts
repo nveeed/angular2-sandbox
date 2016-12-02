@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `
     <h1>{{title}}</h1>
-    <a routerLink="/page-1">Page1</a>
+    <p><a routerLink="/page-1">Page1</a></p>
+    <p><a routerLink="/page-2">Page2</a></p>
    <router-outlet></router-outlet>
     `,
 })
