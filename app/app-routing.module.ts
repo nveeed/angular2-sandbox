@@ -1,8 +1,11 @@
+import { NgModule }             from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 import {Page1Component} from './pages/page-1/page-1.component'
 import {Page2Component} from './pages/page-2/page-2.component'
 import {MyComponent} from './components/my-component/my-component.component'
 
-export const routes = [
+const appRoutes = [
     {
         path: 'my-component/:slug',
         component: MyComponent
@@ -21,3 +24,14 @@ export const routes = [
         pathMatch: 'full'
     }
 ];
+
+@NgModule({
+    imports: [
+        RouterModule.forRoot(appRoutes)
+    ],
+    exports: [
+        RouterModule
+    ]
+})
+export class AppRoutingModule {
+}
