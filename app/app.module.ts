@@ -9,11 +9,13 @@ import {ComponentDetailComponent} from './pages/component-details/component-deta
 
 import {MyComponent} from './components/my-component/my-component.component'
 import {AppRoutingModule} from './app-routing.module'
+import {PeopleModule} from './pages/people/people.module';
 
 @NgModule({
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        PeopleModule
     ],
     declarations: [
         AppComponent,
