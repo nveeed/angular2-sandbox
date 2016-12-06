@@ -26,6 +26,6 @@ export class PersonDetailComponent implements OnInit{
     }
 
     goToDMDetails(): void {
-        this.router.navigate(['/people/person', 1]);
+        this.router.navigate(['../', 1], { relativeTo: this.route });
     }
 }

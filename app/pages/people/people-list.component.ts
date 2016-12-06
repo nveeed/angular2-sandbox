@@ -8,7 +8,7 @@ import {PeopleService} from "./people.service";
     <h2>People List</h2>
     <ul *ngIf="people.length">
         <li *ngFor="let bnda of people">
-            <a routerLink="/people/person/{{bnda.id}}">{{bnda.name}}</a>
+            <a routerLink="./person/{{bnda.id}}">{{bnda.name}}</a>
         </li>
     </ul>
     `,
