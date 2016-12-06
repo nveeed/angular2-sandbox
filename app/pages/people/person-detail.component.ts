@@ -8,7 +8,7 @@ import {PeopleService} from "./people.service";
     selector: 'people-list',
     template: `
     <h3 *ngIf="person">{{person.id}}: {{person.name}}</h3>
-    <back-btn></back-btn>
+    <back-btn title="Back to People List"></back-btn>
     <button *ngIf="person && person.id !== 1" (click)="goToDMDetails()">See DM details</button>
     `,
 })
@@ -21,7 +21,7 @@ export class PersonDetailComponent implements OnInit{
         private router: Router
     ){}
 
-    ngOnInit(){
+    ngOnInit(): void {
         this.route.params.subscribe(params => this.person = this.peopleService.getPerson(+params['id']));
     }
 
