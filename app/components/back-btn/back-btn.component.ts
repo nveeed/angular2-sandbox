@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Location } from '@angular/common';
-import {Location} from "../../../node_modules/@angular/common/src/location/location";
 
 @Component({
     moduleId: module.id,
