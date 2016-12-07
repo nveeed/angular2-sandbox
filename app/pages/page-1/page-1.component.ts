@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
     selector: 'page-1',
     template: `
     <h2>{{title}}</h2>
-    <my-component title="My Component"></my-component>
     `,
 })
 export class Page1Component {

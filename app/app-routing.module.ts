@@ -3,13 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {Page1Component} from './pages/page-1/page-1.component'
 import {Page2Component} from './pages/page-2/page-2.component'
-import {ComponentDetailComponent} from './pages/component-details/component-detail.component'
 
 const appRoutes = [
-    {
-        path: 'my-component/:slug',
-        component: ComponentDetailComponent
-    },
     {
         path: 'page-2',
         component: Page2Component
