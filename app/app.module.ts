@@ -7,7 +7,7 @@ import {Page1Component} from './pages/page-1/page-1.component'
 import {Page2Component} from './pages/page-2/page-2.component'
 
 import {AppRoutingModule} from './app-routing.module'
-import {PeopleModule} from './pages/people/people.module';
+import {PeopleModule} from './feature-areas/people/people.module';
 
 @NgModule({
     imports: [
