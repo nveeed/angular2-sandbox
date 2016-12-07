@@ -5,7 +5,7 @@ import {PeopleService} from "./people.service";
 @Component({
     selector: 'people-list',
     template: `
-    <h2>People List</h2>
+    <h3>People List</h3>
     <ul *ngIf="people.length">
         <li *ngFor="let bnda of people">
             <a routerLink="./person/{{bnda.id}}">{{bnda.name}}</a>
