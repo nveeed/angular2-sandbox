@@ -1,10 +1,19 @@
-import { Directive, HostListener } from '@angular/core';
+import { Directive, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
     selector: '[nvdHighlight]'
 })
 export class HighlightDirective {
-    @HostListener('mouseenter') onMouseEnter($event: any) {
-        $event.target.style.color = "#0f0";
+    @HostListener('mouseenter') onMouseEnter() {
+        this.element.nativeElement.style.backgroundColor = 'yellow';
     }
+
+    @HostListener('mouseleave') onMouseLeave() {
+        this.element.nativeElement.style.backgroundColor = 'transparent';
+    }
+
+    constructor(public element:ElementRef) {
+
+    }
+
 }
