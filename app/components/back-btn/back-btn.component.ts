@@ -7,8 +7,7 @@ import { Location } from '@angular/common';
     template: `<button (click)="goBack()">{{title}}</button>`,
 })
 export class BackBtnComponent {
-    @Input()
-    title = 'Go Back';
+    @Input() title = 'Go Back';
 
     constructor(private location: Location){}
 
