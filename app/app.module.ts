@@ -8,12 +8,14 @@ import {Page2Component} from './pages/page-2/page-2.component'
 
 import {AppRoutingModule} from './app-routing.module'
 import {PeopleModule} from './feature-areas/people/people.module';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
     imports: [
         BrowserModule,
         AppRoutingModule,
-        PeopleModule
+        PeopleModule,
+        SharedModule
     ],
     declarations: [
         AppComponent,

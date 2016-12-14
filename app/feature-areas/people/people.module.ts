@@ -6,18 +6,18 @@ import {PeopleRoutingModule} from './people-routing.module';
 import {PeopleService} from './people.service';
 import {PeopleListComponent} from './people-list.component';
 import {PersonDetailComponent} from './person-detail.component';
-import {BackBtnComponent} from '../../components/back-btn/back-btn.component';
+import {SharedModule} from '../../shared/shared.module';
 
 @NgModule({
     imports: [
         BrowserModule,
         PeopleRoutingModule,
+        SharedModule
     ],
     declarations: [
         PeopleComponent,
         PeopleListComponent,
         PersonDetailComponent,
-        BackBtnComponent
     ],
     providers: [PeopleService],
     bootstrap: [PeopleComponent]
